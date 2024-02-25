@@ -1,6 +1,7 @@
-import "./Movie.css";
 import ModalMovie from "../ModalMovie/ModalMovie";
 import React, { useState } from "react";
+import "./Movie.css";
+
 
 function Movie(props) {
   const movies = props.movieData;
