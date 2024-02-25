@@ -1,0 +1,32 @@
+
+nav{
+
+ 
+  padding:  0 100px  ;
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-between;
+}
+
+.navbar--logo{
+  margin: 0;
+}
+
+.Watchlist--button{
+  padding: 10px 16px;
+  background-color: rgb(247, 29, 29);
+  color: whitesmoke;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.Watchlist--button:hover{
+  opacity: 0.8;
+}
+.Watchlist--button:active{
+  opacity: 0.6;
+}
