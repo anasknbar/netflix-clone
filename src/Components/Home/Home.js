@@ -5,10 +5,7 @@ import { useEffect, useState } from 'react';
 
 
 function Home() {
-// http:/localhost:3005/trending
-// const moviesArray = movieData.map(movie => {
-//   return  new Movie(movie.id,movie.title,movie.release_date,movie.poster_path,movie.overview)
-// })
+
   const [trendingMovies,setTrendingMovies] = useState([]);
 
 
