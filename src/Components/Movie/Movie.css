@@ -28,6 +28,9 @@
 
 .poster{
   width: 100%;
+  height: 300px;
+  object-fit: cover;
+
   cursor: pointer;
 }
 .poster:hover{

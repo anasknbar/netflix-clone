@@ -26,6 +26,24 @@ function Movie(props) {
       [movieId]: false,
     }));
   };
+
+ const addMovieHandler = async (movie)=>{
+  console.log(movie)
+  
+    const serverUrl = `http://localhost:3000/addMovie`
+    const serverRespone = await  fetch(serverUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(movie),
+    })
+    const jsonResponse = await serverRespone.json()
+    console.log(jsonResponse)
+  
+ }
+
+ 
   
   return (
     <>
@@ -45,7 +63,7 @@ function Movie(props) {
                   </div>
 
                   <p>{item.title || item.name}</p>
-                  <button className="addTowatchList--button">
+                  <button className="addTowatchList--button" onClick={()=>{addMovieHandler(item)}}>
                     <i
                       className="fa-solid fa-plus"
                       style={{ color: "#63E6BE" }}
