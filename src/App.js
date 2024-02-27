@@ -1,6 +1,5 @@
 import './App.css';
-import  Navbar from "./Components/Navbar/Navbar"
-import Movie from './Components/MovieList/MovieList';
+
 import { Route, Routes } from 'react-router-dom';
 import FavList from './Components/FavList/FavList';
 import Home from './Components/Home/Home';

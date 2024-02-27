@@ -2,6 +2,7 @@ import Navbar from '../Navbar/Navbar';
 import MovieList from '../MovieList/MovieList';
 import "./Home.css"
 import { useEffect, useState } from 'react';
+import trendingMoveis from "../../data.json"
 
 
 function Home() {
@@ -29,7 +30,7 @@ function Home() {
     <>
       <Navbar/>
       <MovieList 
-        movieArray = {trendingMovies}
+        movieArray = {trendingMoveis}
       />
     </>
   );
